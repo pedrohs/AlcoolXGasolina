@@ -40,10 +40,10 @@
       <Separator layoutX="18.0" layoutY="254.0" prefWidth="200.0" />
       <Button fx:id="btnCalc" layoutX="92.0" layoutY="219.0" mnemonicParsing="false" onAction="#calcularRelacao" text="Calcular" />
       <Text layoutX="79.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abasteça com:" />
-      <Label fx:id="lblResultado" alignment="CENTER" layoutX="28.0" layoutY="282.0" prefHeight="36.0" prefWidth="181.0" textFill="#00adf0">
+      <Text fx:id="lblResultado" fill="#2d88e3" layoutX="26.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="182.578125">
          <font>
             <Font name="Arial" size="31.0" />
          </font>
-      </Label>
+      </Text>
    </children>
 </AnchorPane>
