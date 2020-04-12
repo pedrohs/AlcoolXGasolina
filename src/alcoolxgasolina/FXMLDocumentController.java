@@ -11,8 +11,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 
 /**
  *
@@ -20,20 +20,31 @@ import javafx.scene.control.TextField;
  */
 public class FXMLDocumentController implements Initializable {
     
-    @FXML
+    @FXML    
+    private Text lblResultado;
+    
+    @FXML 
     private TextField inputGasolinaCons, inputEtanolCons, inputEtanolPreco, inputGasolinaPreco;
     private Button btnCalc;
-    private Label lblResultado;
     
     
     @FXML
     private void calcularRelacao(ActionEvent event) {
-
         float consumoGasolina = Float.parseFloat(inputGasolinaCons.getText());
         float consumoEtanol = Float.parseFloat(inputEtanolCons.getText());
         
-        float relacao = consumoGasolina / consumoEtanol;
-        System.out.println(relacao);
+        float relacaoCons = consumoEtanol /consumoGasolina ;
+        
+        float precoGasolina = Float.parseFloat(inputGasolinaPreco.getText());
+        float precoEtanol = Float.parseFloat(inputEtanolPreco.getText());
+        
+        float relacaoPreco = precoEtanol / precoGasolina;
+        
+        if(relacaoCons < relacaoPreco){
+            lblResultado.setText("Gasolina");
+        }else{
+            lblResultado.setText("Etanol");
+        }
     }
     
     @Override
