@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="235.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="alcoolxgasolina.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alcoolxgasolina.FXMLDocumentController">
    <children>
       <Text fill="RED" layoutX="35.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gasolina">
          <font>
@@ -28,8 +28,8 @@
       <Text layoutX="19.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consumo na gasolina:" />
       <Separator layoutX="18.0" layoutY="46.0" prefWidth="200.0" />
       <Text layoutX="18.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consumo no etanol:" />
-      <TextField fx:id="inputGasolinaCons" layoutX="140.0" layoutY="57.0" prefHeight="25.0" prefWidth="29.0" />
       <TextField fx:id="inputEtanolCons" layoutX="140.0" layoutY="95.0" prefHeight="25.0" prefWidth="29.0" />
+      <TextField fx:id="inputGasolinaCons" layoutX="140.0" layoutY="57.0" prefHeight="25.0" prefWidth="29.0" />
       <Text layoutX="171.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Km/L" />
       <Text layoutX="171.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Km/L" />
       <Text layoutX="19.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço gasolina:" />
